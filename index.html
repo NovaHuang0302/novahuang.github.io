@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 基础样式 */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* 响应式容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #8e44ad;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        /* 欢迎区域样式 */
+        .welcome-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #9b59b6, #f1c40f);
+            color: white;
+            padding-top: 60px;
+        }
+
+        .welcome-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* 个人简介区域样式 */
+        .profile-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .profile-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile-content h2 {
+            color: #8e44ad;
+            margin-bottom: 2rem;
+        }
+
+        /* 联系信息区域样式 */
+        .contact-section {
+            padding: 4rem 0;
+            background-color: #8e44ad;
+            color: white;
+        }
+
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-content h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+            }
+
+            .welcome-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .welcome-content p {
+                font-size: 1.2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航菜单 -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#welcome">首页</a></li>
+                <li><a href="#profile">关于我</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 欢迎区域 -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-content container">
+            <h1>欢迎来到我的个人主页</h1>
+            <p>让我们一起探索无限可能</p>
+        </div>
+    </section>
+
+    <!-- 个人简介区域 -->
+    <section id="profile" class="profile-section">
+        <div class="profile-content container">
+            <h2>关于我</h2>
+            <p>首先，我是一名充满热情的开发者，专注于创造优秀的用户体验和解决方案。我热爱学习新技术，并且乐于与他人分享知识和经验。在工作中，我追求代码的质量和效率，同时也注重团队协作和沟通。</p>
+            <p>其次，我是一个快速学习的人，能够在短时间内掌握新的技术和工具。我喜欢挑战自己，不断提升自己的技能。我相信，只有不断学习，才能保持自己的竞争力。</p>
+            <p>最后，我是一个团队合作的人，能够与他人合作完成项目。我喜欢与他人合作，分享知识和经验。我相信，只有合作才能完成更复杂的项目。我也喜欢与他人分享自己的经验和知识，帮助他人。</p>
+            <p>我很幸运，有一个非常优秀的团队，他们都非常优秀。我很幸运，有一个非常优秀的团队，他们都非常优秀。我很幸运，有一个非常优秀的团队，他们都非常优秀。</p>
+        </div>
+    </section>
+
+    <!-- 联系信息区域 -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content container">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>邮箱</h3>
+                    <p>example@email.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>电话</h3>
+                    <p>+86 123 4567 8900</p>
+                </div>
+                <div class="contact-item">
+                    <h3>地址</h3>
+                    <p>新加坡市</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
